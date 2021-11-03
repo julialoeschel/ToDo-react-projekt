@@ -1,13 +1,14 @@
 import React from 'react';
 import Title from './components/Title/Title';
+import Button from './components/Button/Button';
 
 import Todo from './components/Todo/Todo';
 
 function App(): JSX.Element {
   return (
     <>
-      <Title>This is my Title</Title>
-      <button>click</button>
+      <Title>To Do List</Title>
+      <Button>click</Button>
       <Todo
         isDone={true}
         title={'Schuhe putzen'}

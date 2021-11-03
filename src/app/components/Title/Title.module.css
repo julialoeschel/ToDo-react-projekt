@@ -1,5 +1,7 @@
 .title {
   color: rgb(74, 28, 118);
-  background-color: cornsilk;
   text-align: center;
+  font-family: Roboto, Lato, Helvetica, sans-serif;
+  font-size: 50px;
+  padding: 20px;
 }

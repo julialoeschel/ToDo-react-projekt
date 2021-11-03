@@ -10,7 +10,7 @@ type ToDoProps = {
 function Todo({ isDone, title, description }: ToDoProps): JSX.Element {
   return (
     <div className={`${classes.todo} ${isDone ? classes.green : classes.red}`}>
-      <h2>{title}</h2>
+      <h2 className={classes.h2}>{title}</h2>
       <span>{description}</span>
     </div>
   );
