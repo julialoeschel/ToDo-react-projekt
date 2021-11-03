@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './Todo.module.css';
 
 type ToDoProps = {
-  isDone: boolean;
   title: string;
   description: string;
 };
 
-function Todo({ isDone, title, description }: ToDoProps): JSX.Element {
+function Todo({ title, description }: ToDoProps): JSX.Element {
+  const [isItDone, setisDone] = useState(false);
+
+  function unDo() {
+    setisDone(!isItDone);
+  }
+
   return (
-    <div className={`${classes.todo} ${isDone ? classes.green : classes.red}`}>
+    <div
+      onClick={() => unDo()}
+      className={`${classes.todo} ${isItDone ? classes.green : classes.red}`}
+    >
       <h2 className={classes.h2}>{title}</h2>
       <span>{description}</span>
     </div>
