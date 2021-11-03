@@ -1,0 +1,15 @@
+.todo {
+  width: 400px;
+  height: 100px;
+  color: black;
+  margin: 20px;
+  padding: 10px;
+}
+
+.green {
+  background-color: rgb(115, 171, 106);
+}
+
+.red {
+  background-color: rgb(196, 119, 119);
+}
