@@ -1,8 +1,15 @@
 import React from 'react';
-import Title from './components/Title/Title';
+
+import Todo from './components/Todo/Todo';
 
 function App(): JSX.Element {
-  return <Title>My h1 is here</Title>;
+  return (
+    <Todo
+      isDone={true}
+      title={'Schuhe putzen'}
+      description={'Schuhe im Flur'}
+    ></Todo>
+  );
 }
 
 export default App;
