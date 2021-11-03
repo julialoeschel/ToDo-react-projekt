@@ -7,15 +7,6 @@ type TitleProps = {
 };
 
 function Title({ children }: TitleProps): JSX.Element {
-  return (
-    <h1
-      className={
-        classes.title /*`${}` wenn es mehrere classNames gibt. dann jede ClassName in ein §{}*/
-      }
-    >
-      {children}
-    </h1>
-  );
+  return <h1 className={classes.title}>{children}</h1>;
 }
-
 export default Title;

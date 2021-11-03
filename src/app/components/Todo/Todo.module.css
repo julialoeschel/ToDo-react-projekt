@@ -1,15 +1,21 @@
 .todo {
   width: 400px;
-  height: 100px;
   color: black;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 0.4em;
 }
 
 .green {
-  background-color: rgb(115, 171, 106);
+  background-color: rgb(148, 199, 140);
 }
 
 .red {
-  background-color: rgb(196, 119, 119);
+  background-color: rgb(218, 102, 102);
+}
+
+.h2 {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
 }
