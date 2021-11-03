@@ -7,16 +7,11 @@ type ToDoProps = {
   description: string;
 };
 
-function Todo(props: ToDoProps): JSX.Element {
+function Todo({ isDone, title, description }: ToDoProps): JSX.Element {
   return (
-    <div
-      className={`${classes.todo} ${
-        props.isDone ? classes.green : classes.red
-      }`}
-    >
-      {props.isDone}
-      <h2>{props.title}</h2>
-      <span>{props.description}</span>
+    <div className={`${classes.todo} ${isDone ? classes.green : classes.red}`}>
+      <h2>{title}</h2>
+      <span>{description}</span>
     </div>
   );
 }
