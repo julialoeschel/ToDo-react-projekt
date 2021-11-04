@@ -34,7 +34,7 @@ function App(): JSX.Element {
         <Todo
           title={todo.title}
           description={todo.description}
-          isDone={todo.isDone}
+          /*isDone={todo.isDone}*/
         ></Todo>
       ))}
     </>

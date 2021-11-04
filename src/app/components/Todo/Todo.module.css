@@ -5,13 +5,15 @@
   padding: 20px;
   border-radius: 0.4em;
   background-color: rgb(193, 180, 208);
+  display: grid;
+  grid-template-columns: 1fr 30px;
 }
 
-.green {
+.done {
   text-decoration: line-through;
 }
 
-.red {
+.undone {
   background-color: rgb(200, 172, 232);
 }
 

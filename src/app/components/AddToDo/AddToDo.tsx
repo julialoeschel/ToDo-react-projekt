@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './AddToDo.module.css';
-
 import { useState } from 'react';
 
 type AddToDoProps = {
@@ -22,6 +21,8 @@ function AddToDo({ onSubmitfromApp }: AddToDoProps): JSX.Element {
       title,
       description,
     });
+    setTitle('');
+    setDiscription('');
   }
 
   return (
