@@ -1,15 +1,21 @@
 import React from 'react';
 import Title from './components/Title/Title';
-import Button from './components/Button/Button';
 import Todo from './components/Todo/Todo';
-import TaskList from './components/TaskList/TaskList';
 import AddToDo from './components/AddToDo/AddToDo';
 
 function App(): JSX.Element {
+  function addToDoItem(todo: {
+    title: string;
+    description: string;
+    isDone: boolean;
+  }) {
+    console.log(todo);
+  }
+
   return (
     <>
       <Title>To Do List</Title>
-      <AddToDo />
+      <AddToDo onSubmitfromApp={addToDoItem} />
       <Todo
         // isDone={true}
         title={'Schuhe putzen'}
@@ -35,7 +41,7 @@ function App(): JSX.Element {
         title={'Webentwickler werden'}
         description={'...'}
       ></Todo>
-      {/* <Todo isDone={false} title={'Mama anrufen'} description={'...'}></Todo> */}
+      {}
     </>
   );
 }

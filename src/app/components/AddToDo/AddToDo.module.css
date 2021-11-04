@@ -4,3 +4,8 @@
   gap: 5px;
   max-width: 430px;
 }
+
+.input {
+  display: grid;
+  grid-template-columns: 2fr;
+}
