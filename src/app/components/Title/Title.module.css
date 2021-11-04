@@ -4,4 +4,8 @@
   font-family: Roboto, Lato, Helvetica, sans-serif;
   font-size: 50px;
   padding: 20px;
+  background-color: rgb(220, 203, 240);
+  width: 400px;
+  margin-left: 20px;
+  border-radius: 0.4em;
 }

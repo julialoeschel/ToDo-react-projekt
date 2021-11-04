@@ -1,0 +1,27 @@
+.AddToDo {
+  margin: 20px;
+  display: grid;
+  gap: 5px;
+  max-width: 430px;
+}
+
+.input {
+  display: grid;
+  grid-template-columns: 2fr;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  color: rgb(74, 28, 118);
+}
+
+.submit {
+  background-color: rgb(219, 207, 230);
+  color: rgb(74, 28, 118);
+  font-weight: bold;
+  border: hidden;
+  padding: 10px 20px;
+  border-radius: 0.4em;
+}
+
+.submitlabel {
+  justify-self: center;
+}
