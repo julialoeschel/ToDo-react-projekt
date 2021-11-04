@@ -44,8 +44,8 @@ function AddToDo({ onSubmitfromApp }: AddToDoProps): JSX.Element {
           rows={1}
         ></textarea>
       </label>
-      <label>
-        <input type="submit" />
+      <label className={classes.submitlabel}>
+        <input type="submit" value="Add Task" className={classes.submit} />
       </label>
     </form>
   );

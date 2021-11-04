@@ -4,14 +4,15 @@
   margin: 20px;
   padding: 20px;
   border-radius: 0.4em;
+  background-color: rgb(193, 180, 208);
 }
 
 .green {
-  background-color: rgb(148, 199, 140);
+  text-decoration: line-through;
 }
 
 .red {
-  background-color: rgb(218, 102, 102);
+  background-color: rgb(200, 172, 232);
 }
 
 .h2 {
