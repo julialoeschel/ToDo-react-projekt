@@ -7,3 +7,7 @@
   border-radius: 0.4em;
   text-transform: uppercase;
 }
+
+.submit {
+  width: 40px;
+}
