@@ -7,12 +7,14 @@ type AddToDoProps = {
     isDone: boolean;
     title: string;
     description: string;
+    id: number;
   }) => void;
 };
 
 function AddToDo({ onSubmitfromApp }: AddToDoProps): JSX.Element {
   const [title, setTitle] = useState('');
   const [description, setDiscription] = useState('');
+  const [id, setId] = useState(0);
 
   function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -20,9 +22,12 @@ function AddToDo({ onSubmitfromApp }: AddToDoProps): JSX.Element {
       isDone: false,
       title,
       description,
+      id,
     });
     setTitle('');
     setDiscription('');
+    setId(id + 1);
+    console.log(id);
   }
 
   return (

@@ -10,11 +10,13 @@ function App(): JSX.Element {
       isDone: true,
       title: 'Schuhe putzen',
       description: 'Schuhe im Flur',
+      id: 999,
     },
     {
       isDone: false,
       title: 'Katze streicheln',
       description: 'Miau miau',
+      id: 99,
     },
   ]);
 
@@ -22,9 +24,14 @@ function App(): JSX.Element {
     title: string;
     description: string;
     isDone: boolean;
+    id: number;
   }) {
     setTodos([todo, ...todos]);
   }
+
+  const deleteTodo = (id: number) => {
+    setTodos(todos.filter((task) => task.id !== id));
+  };
 
   return (
     <>
@@ -35,6 +42,8 @@ function App(): JSX.Element {
           title={todo.title}
           description={todo.description}
           /*isDone={todo.isDone}*/
+          id={todo.id}
+          onDelete={deleteTodo}
         ></Todo>
       ))}
     </>
